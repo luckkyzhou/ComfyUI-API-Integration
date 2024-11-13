@@ -145,8 +145,10 @@ prompt["3"]["inputs"]["seed"] = 5
 
 ### Example 1: Model Outfit Change
 
-｜ ![Model](images/cloth_change_body.png) ｜ ![Result](images/cloth_change_result.png) ｜
+<img src="images/cloth_change_body.png" alt="Model" width="45%">
+<img src="images/cloth_change_result.png" alt="Result" width="45%">
 
 ### Example 2: Model Face Change
 
-｜ ![Model](images/model_change_body.png) ｜ ![Result](images/model_change_result.png) ｜
+<img src="images/model_change_body.png" alt="Model" width="45%">
+<img src="images/model_change_result.png" alt="Result" width="45%">
