@@ -1,6 +1,6 @@
 # comfyui-api
 
-**Read this in other languages: [中文](comyui-api-zh.md).**
+**Read this in other languages: [中文](comfyui-api-zh.md).**
 
 ## **GET /history**
 

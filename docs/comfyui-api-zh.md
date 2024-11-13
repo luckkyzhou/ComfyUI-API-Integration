@@ -1,6 +1,6 @@
 # comfyui-api-zh
 
-**其他语言版本: [English](comyui-api.md)
+**其他语言版本: [English](comfyui-api.md)
 
 ## **GET /history**
 

@@ -16,9 +16,12 @@
 - **ComfyUI API 封装**：通过处理输入/输出格式来简化 API 使用，实现无缝集成。
 - **自动化工作流程执行**：允许用户输入图像，并基于所选工作流程接收处理后的结果。
 
-## ComfyUI API说明
-**[API详细说明](api/comyui-api-zh.md)
+## ComfyUI API
+[API详细说明文档](docs/comfyui-api-zh.md)
+
 另外，由于应对服务器无法打开ws协议的情况，代码中未使用ws查询任务状态，若有需求可参考官方的示例代码
+
+[官方api示例example](https://github.com/comfyanonymous/ComfyUI/blob/master/script_examples/websockets_api_example.py)
 
 ## Quick Start
 
@@ -144,6 +147,12 @@ prompt["3"]["inputs"]["seed"] = 5
 
 ### Example 1: Model Outfit Change
 
-### Example 2: Face Swap
+![换装前](images/cloth_change_body.png)
 
-### Example 3: Intelligent Removal
+![换装后](images/cloth_change_result.png)
+
+### Example 2: Model Face Change
+
+![换脸前](images/model_change_body.png)
+
+![换脸后](images/model_change_result.png)
