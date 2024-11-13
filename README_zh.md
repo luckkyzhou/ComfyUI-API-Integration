@@ -1,27 +1,27 @@
 # ComfyUI API Integration Automated Suite
 
-**Read this in other languages: [中文](README_zh.md).**
+**其他语言版本: [English](README.md).**
 
-## Project Overview
+## 概览
 
-This project provides a comprehensive suite for developers to integrate ComfyUI APIs and automate image generation workflows. By encapsulating API input and output, this suite enables developers to input any workflow json file and receive the processed output image directly. It simplifies the integration process with ComfyUI, enhances efficiency, and includes several practical custom workflows.
+该项目为开发者提供了用于集成 ComfyUI API 并自动化图像生成工作流程。通过封装 API 输入和输出，开发者可以输入任意工作流 JSON 文件并直接获得处理后的输出图像，简化了与 ComfyUI 的集成过程。
 
-## Motivation
+## 起源
 
-The motivation behind this project was that I developed a program to easily use ComfyUI's workflows to provide users with AI image processing features such as model outfit changing, model generation, face swapping, and intelligent object removal. When a user sends a request, the backend needs to correctly load the parameters, upload the input image to ComfyUI, trigger the workflow execution, and ultimately obtain the execution status and output image result.
+项目源于我开发了一个程序，希望便捷地使用 ComfyUI 的工作流程，为用户提供 AI 图像处理功能，如模特换装、模特生成、换脸和智能物体消除。当用户发送请求时，后端需要正确加载参数，将输入图像上传到 ComfyUI，触发工作流执行，并最终获取执行状态和输出图像结果。
 
-## Features
+## 功能
 
-- **ComfyUI API Collection & Testing**: A complete set of ComfyUI APIs, with specific testing on all APIs required for this streamlined workflow.
-- **ComfyUI API Encapsulation**: Streamlines API usage by handling input/output formats for seamless integration.
-- **Automated Workflow Execution**: Allows users to input images and receive the processed result based on selected workflows.
+- **ComfyUI API 收集与测试**：完整的 ComfyUI API 集合，针对该精简工作流程所需的所有 API 进行了特定测试。
+- **ComfyUI API 封装**：通过处理输入/输出格式来简化 API 使用，实现无缝集成。
+- **自动化工作流程执行**：允许用户输入图像，并基于所选工作流程接收处理后的结果。
 
 ## ComfyUI API
-[API Documentation](docs/comfyui-api.md)
+[API详细说明文档](docs/comfyui-api-zh.md)
 
-Additionally, to address cases where the server cannot open the WebSocket protocol, the code does not use WebSocket to query task status. If needed, you can refer to the official sample code.
+另外，由于应对服务器无法打开ws协议的情况，代码中未使用ws查询任务状态，若有需求可参考官方的示例代码
 
-[Official API Example](https://github.com/comfyanonymous/ComfyUI/blob/master/script_examples/websockets_api_example.py)
+[官方API示例example](https://github.com/comfyanonymous/ComfyUI/blob/master/script_examples/websockets_api_example.py)
 
 ## Quick Start
 
@@ -44,7 +44,7 @@ python main.py --server-url 'your-server-address' --download-path 'path-to-save-
 e.g. python main.py --server-url 'http://127.0.0.1:8188' --download-path '/Downloads' --workflow-path '/Documents/generate_image.json' --paramters '{"5": ["text", "masterpiece best quality man"], "10": ["image", "/Downloads/test.png"]}'
 ```
 
-Setting of parameters, example:
+parameters的设置，示例：
 
 ```
 prompt_text = """
@@ -143,10 +143,12 @@ prompt["6"]["inputs"]["text"] = "masterpiece best quality man"
 prompt["3"]["inputs"]["seed"] = 5
 ```
 
+## Workflow Examples
+
 ### Example 1: Model Outfit Change
 
-｜ ![Model](images/cloth_change_body.png) ｜ ![Result](images/cloth_change_result.png) ｜
+｜ ![换装前](images/cloth_change_body.png) ｜ ![换装后](images/cloth_change_result.png) ｜
 
 ### Example 2: Model Face Change
 
-｜ ![Model](images/model_change_body.png) ｜ ![Result](images/model_change_result.png) ｜
+｜ ![换脸前](images/model_change_body.png) ｜ ![换脸后](images/model_change_result.png) ｜
