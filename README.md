@@ -1,6 +1,6 @@
 # ComfyUI API Integration Automated Suite
 
-**Read this in other languages: [中文](README_zh.md).**
+**其他语言版本: [中文](README_zh.md).**
 
 ## 概览
 
@@ -17,7 +17,7 @@
 - **自动化工作流程执行**：允许用户输入图像，并基于所选工作流程接收处理后的结果。
 
 ## ComfyUI API说明
-
+**[API详细说明](api/comyui-api-zh.md)
 另外，由于应对服务器无法打开ws协议的情况，代码中未使用ws查询任务状态，若有需求可参考官方的示例代码
 
 ## Quick Start
